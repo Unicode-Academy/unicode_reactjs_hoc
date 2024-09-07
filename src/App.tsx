@@ -1,13 +1,11 @@
-import { withSomething } from "./utils/withSomething";
-type Props = {
-  somethingValue: string;
-};
-const App = withSomething<Props>(({ somethingValue }: Props) => {
+import Content from "./components/Content";
+import Title from "./components/Title";
+
+export default function App() {
   return (
     <div>
-      <h1>HOC</h1>
-      <h2>{somethingValue}</h2>
+      <Title title="Học React không khó" />
+      <Content a={1} />
     </div>
   );
-});
-export default App;
+}
