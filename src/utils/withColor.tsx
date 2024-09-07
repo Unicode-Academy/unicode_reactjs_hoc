@@ -8,6 +8,7 @@ export const withColor = <T,>(WrapComponent: React.ElementType) => {
   };
 
   return (props: T) => {
+    //Hook
     return (
       <div style={{ background: getColor() }}>
         <WrapComponent {...props} color={getColor()} />

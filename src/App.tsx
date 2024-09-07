@@ -1,13 +1,9 @@
-import Todos from "./components/Todos/Todos";
+import Counter from "./components/Counter";
 
 export default function App() {
   return (
     <div>
-      <Todos />
+      <Counter />
     </div>
   );
 }
-
-//mounted
-//updated
-//unmounted
