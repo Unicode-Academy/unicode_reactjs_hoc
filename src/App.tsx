@@ -1,11 +1,13 @@
-import { useState } from "react";
-import Users from "./components/Users";
+import Todos from "./components/Todos/Todos";
+
 export default function App() {
-  const [status, setStatus] = useState(false);
   return (
     <div>
-      {status && <Users />}
-      <button onClick={() => setStatus(!status)}>Load</button>
+      <Todos />
     </div>
   );
 }
+
+//mounted
+//updated
+//unmounted
