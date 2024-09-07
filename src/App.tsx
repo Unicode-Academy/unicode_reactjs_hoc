@@ -1,11 +1,11 @@
-import Content from "./components/Content";
-import Title from "./components/Title";
-
+import { useState } from "react";
+import Users from "./components/Users";
 export default function App() {
+  const [status, setStatus] = useState(false);
   return (
     <div>
-      <Title title="Học React không khó" />
-      <Content a={1} />
+      {status && <Users />}
+      <button onClick={() => setStatus(!status)}>Load</button>
     </div>
   );
 }
